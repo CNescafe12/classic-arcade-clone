@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div>
+        <!-- Display the lives and score of the game -->
+		<div class = 'result'>
+			score:<span id = 'score'>0</span>
+			lives:<span class = 'lives'>3</span>
+		</div>
+		
+	</div>
+	<!-- The Win Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h1>YOU WIN</h1>
+            </div>
+            <div class="modal-body">
+                <h2 id='massage'>yesss! You Did It <br> Play again?</h2>
+            </div>
+            <div class="modal-footer">
+                <button id='replayBtn'>Replay</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Game over  -->
+    <div id = 'did-it'>
+    	<h2 id = 'congrate'>Game Over<br>You wanna play again!</h2>
+    	<button id = 'win'>Replay</button>
+    </div>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
